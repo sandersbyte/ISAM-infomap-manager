@@ -1,65 +1,40 @@
 # ibm-isam-infomap README
 
-This is the README for your extension "ibm-isam-infomap". After writing up a brief description, we recommend including the following sections.
+The IBM-isam-infomap extension can be installed on Visual studio code and is used to manage infomap scripts to increase development speed. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Features include:
+- Uploading mapping rule content
+- Deploy changes
+- Reload federation/aac runtime
+- Clear trace log file
+- download trace log file
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Visual studio code 1.4.1
 
-## Extension Settings
+## Extension Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Commands are triggered using Windows + SHIFT + p
 
-For example:
+First, the ISAM Primary master hostname and credentials must be set to the extension.
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+ISAM register host:
+Register hostname and credentials in the extension for the amount of tim Visual Studio Code is running
+ISAM Register mapping rule:
+Register existing mapping rule to be used in later commands
+ISAM Deploy changes:
+Deploy changes
+ISAM upload mapping rule:
+upload the current focussed text editor content to the registered mapping rule
+ISAM Reload federation runtime:
+Reload the federation runtime
+ISAM Clear trace file:
+Clear the trace.log file
+ISAM Download trace file:
+Opens a new temporary document and downloads the current trace file
+ISAM upload, deploy reload:
+upload mapping rule, deploy and reload in one command
