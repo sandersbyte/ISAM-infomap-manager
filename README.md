@@ -38,3 +38,5 @@ Clear the trace.log file
 Opens a new temporary document and downloads the current trace file
 - ISAM upload, deploy reload:
 upload mapping rule, deploy and reload in one command
+## Installation
+1. Place the folder in \Microsoft VS Code\resources\app\extensions
