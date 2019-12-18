@@ -1,0 +1,71 @@
+{
+	"name": "ibm-isam-infomap",
+	"displayName": "IBM ISAM infomap",
+	"description": "Extension to manage infomaps in ISAM infra",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.deployChanges",
+				"title": "ISAM Deploy changes"
+			},
+			{
+				"command": "extension.registerMappingrule",
+				"title": "ISAM Register mapping rule"
+			},
+			{
+				"command": "extension.uploadMappingrule",
+				"title": "ISAM Upload mapping rule"
+			},
+			{
+				"command":"extension.reloadRuntime",
+				"title" : "ISAM Reload federation runtime"
+			},
+			{
+				"command": "extension.doAll",
+				"title" : "ISAM upload, deploy, reload"
+			},
+			{
+				"command": "extension.clearTrace",
+				"title": "ISAM Clear trace file"
+			},
+			{
+				"command": "extension.downloadTrace",
+				"title": "ISAM Download trace file"
+			},
+			{
+				"command": "extension.registerHost",
+				"title": "ISAM Register host"
+			}
+			
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.40.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"tslint": "^5.20.0",
+		"vscode-test": "^1.2.2"
+	}
+}
