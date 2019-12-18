@@ -18,7 +18,7 @@ Visual studio code 1.4.1
 
 ## Extension Usage
 
-Commands are triggered using Windows + SHIFT + p
+Commands are triggered using CONTROL + SHIFT + p
 
 First, the ISAM Primary master hostname and credentials must be set to the extension.
 
