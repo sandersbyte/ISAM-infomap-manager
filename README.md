@@ -22,19 +22,19 @@ Commands are triggered using Windows + SHIFT + p
 
 First, the ISAM Primary master hostname and credentials must be set to the extension.
 
-ISAM register host:
+- ISAM register host:
 Register hostname and credentials in the extension for the amount of tim Visual Studio Code is running
-ISAM Register mapping rule:
+- ISAM Register mapping rule:
 Register existing mapping rule to be used in later commands
-ISAM Deploy changes:
+- ISAM Deploy changes:
 Deploy changes
-ISAM upload mapping rule:
+- ISAM upload mapping rule:
 upload the current focussed text editor content to the registered mapping rule
-ISAM Reload federation runtime:
+- ISAM Reload federation runtime:
 Reload the federation runtime
-ISAM Clear trace file:
+- ISAM Clear trace file:
 Clear the trace.log file
-ISAM Download trace file:
+- ISAM Download trace file:
 Opens a new temporary document and downloads the current trace file
-ISAM upload, deploy reload:
+- ISAM upload, deploy reload:
 upload mapping rule, deploy and reload in one command
