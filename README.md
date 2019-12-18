@@ -1,0 +1,1 @@
+# ISAM-infomap-manager
