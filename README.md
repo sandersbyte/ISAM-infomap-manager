@@ -1,4 +1,4 @@
-# ibm-isam-infomap README
+# IBM-isam-infomap README
 
 The IBM-isam-infomap extension can be installed on Visual studio code and is used to manage infomap scripts to increase development speed. 
 
