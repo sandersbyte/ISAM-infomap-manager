@@ -23,7 +23,7 @@ Commands are triggered using Windows + SHIFT + p
 First, the ISAM Primary master hostname and credentials must be set to the extension.
 
 - ISAM register host:
--- Register hostname and credentials in the extension for the amount of tim Visual Studio Code is running
+Register hostname and credentials in the extension for the amount of tim Visual Studio Code is running
 - ISAM Register mapping rule:
 Register existing mapping rule to be used in later commands
 - ISAM Deploy changes:
