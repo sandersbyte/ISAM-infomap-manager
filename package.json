@@ -3,6 +3,7 @@
 	"displayName": "IBM ISAM infomap",
 	"description": "Extension to manage infomaps in ISAM infra",
 	"version": "0.0.1",
+	"publisher":"SanderMeyfroot",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
@@ -28,12 +29,12 @@
 				"title": "ISAM Upload mapping rule"
 			},
 			{
-				"command":"extension.reloadRuntime",
-				"title" : "ISAM Reload federation runtime"
+				"command": "extension.reloadRuntime",
+				"title": "ISAM Reload federation runtime"
 			},
 			{
 				"command": "extension.doAll",
-				"title" : "ISAM upload, deploy, reload"
+				"title": "ISAM upload, deploy, reload"
 			},
 			{
 				"command": "extension.clearTrace",
@@ -47,7 +48,6 @@
 				"command": "extension.registerHost",
 				"title": "ISAM Register host"
 			}
-			
 		]
 	},
 	"scripts": {
@@ -61,11 +61,20 @@
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.11.7",
+		"@types/request-promise-native": "^1.0.17",
 		"@types/vscode": "^1.40.0",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
+		"request": "^2.88.2",
+		"request-promise-native": "^1.0.8",
 		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
 		"vscode-test": "^1.2.2"
+	},
+	"dependencies": {
+		"@types/request-promise-native": "^1.0.17",
+		"request": "^2.88.2",
+		"request-promise-native": "^1.0.8"
+
 	}
 }

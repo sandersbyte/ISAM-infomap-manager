@@ -106,15 +106,15 @@ function uploadMappingRule(isChain) {
             if (editor !== undefined) {
                 text = editor.document.getText();
             }
-            console.log(text);
+            //console.log(text);
             if (text !== undefined) {
                 text = text.replace(/\"/g, '\\"');
             }
             (() => __awaiter(this, void 0, void 0, function* () {
                 const baseUrl = 'https://' + applianceHost + '/iam/access/v8/mapping-rules/' + mappingruleId;
-                console.log(baseUrl);
+                //console.log(baseUrl);
                 let body_to_send = "{\"content\":\"" + text + "\"}";
-                console.log(body_to_send);
+                //console.log(body_to_send);
                 var options = {
                     body: body_to_send,
                     method: "PUT",
@@ -194,7 +194,7 @@ function getMappingRuleId() {
                     mappingruleId = 0;
                 }
             }
-            console.log(mappingid);
+            //console.log(mappingid);
         }))();
     });
 }
@@ -260,6 +260,7 @@ function registerHost() {
                 }
                 if (result !== undefined && result !== "") {
                     password = result;
+                    auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
                 }
             }
         }
